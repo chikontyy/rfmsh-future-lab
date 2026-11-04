@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RFMSH Future Lab</title>
+  <meta name="description" content="RFMSH Future Lab — an interactive multilingual project by a student of the Republican Physics and Mathematics School.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💙</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-a" aria-hidden="true"></div>
+  <div class="bg-glow glow-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="RFMSH Future Lab">
+      <span class="logo-mark"></span>
+      <span class="logo-text">RFMSH <b>Future Lab</b></span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#tech" data-i18n="nav_tech">Tech</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+      <button class="lang-btn" data-lang="kk" type="button">KZ</button>
+      <span class="lang-indicator" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Student project · RFMSH</p>
+        <h1>
+          <span data-i18n="hero_title_1">Where science</span>
+          <span class="gradient-text" data-i18n="hero_title_2">meets many languages</span>
+        </h1>
+        <p class="lead" data-i18n="hero_lead">An interactive lab built by a student of the Republican Physics and Mathematics School — exploring how code, mathematics and culture can speak one universal language.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about" data-i18n="hero_cta_1">Explore the project</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero_cta_2">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <canvas id="heart-canvas" aria-label="Interactive animated heart" role="img"></canvas>
+        <div class="heart-caption">
+          <span class="heart-word" id="heart-word">Love</span>
+          <span class="heart-lang" id="heart-lang">English</span>
+        </div>
+        <p class="hint" data-i18n="hero_hint">Move your cursor or touch the heart</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+        <h2 data-i18n="about_title">A project by an RFMSH student</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="card card-large reveal">
+          <h3 data-i18n="about_card_title">What is RFMSH Future Lab?</h3>
+          <p data-i18n="about_p1">RFMSH Future Lab is a personal research and design project created by a student of the Republican Physics and Mathematics School (RFMSH) — a school known for its strong focus on mathematics, physics and computer science.</p>
+          <p data-i18n="about_p2">The lab shows that technology has no borders: the interactive heart on this page is drawn with a mathematical curve, animated by a particle system and greets you in many languages of the world.</p>
+        </article>
+
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="9">0</span>
+            <span class="stat-label" data-i18n="stat_1">Languages in the heart</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label" data-i18n="stat_2">Interface languages</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-label" data-i18n="stat_3">External libraries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="feat_eyebrow">Features</p>
+        <h2 data-i18n="feat_title">Built with curiosity</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="icon">∑</div>
+          <h3 data-i18n="feat_1_title">Mathematics</h3>
+          <p data-i18n="feat_1_text">The heart shape is generated from a parametric equation, then brought to life with spring physics.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">&lt;/&gt;</div>
+          <h3 data-i18n="feat_2_title">Clean code</h3>
+          <p data-i18n="feat_2_text">Pure HTML, CSS and JavaScript — no frameworks, no dependencies, instant loading on GitHub Pages.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🌐</div>
+          <h3 data-i18n="feat_3_title">International by design</h3>
+          <p data-i18n="feat_3_text">Switch between English, Russian and Kazakh instantly. Your choice is remembered next time you visit.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TECH -->
+    <section class="section" id="tech">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="tech_eyebrow">Technology</p>
+        <h2 data-i18n="tech_title">Under the hood</h2>
+      </div>
+
+      <div class="tech reveal">
+        <div class="tech-item"><span>HTML5</span><i style="--w:95%"></i></div>
+        <div class="tech-item"><span>CSS3</span><i style="--w:90%"></i></div>
+        <div class="tech-item"><span>JavaScript</span><i style="--w:92%"></i></div>
+        <div class="tech-item"><span>Canvas API</span><i style="--w:85%"></i></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="contact reveal">
+        <h2 data-i18n="contact_title">Let's build the future together</h2>
+        <p data-i18n="contact_text">Open to collaboration, research ideas and international opportunities.</p>
+        <a class="btn btn-primary" href="https://github.com/" target="_blank" rel="noopener" data-i18n="contact_btn">Visit my GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> RFMSH Future Lab · <span data-i18n="footer_text">Made with code and curiosity</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
